@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-09-12 09:43:20
+ * @version $Id$
+ */
+/*初始化样式*/
+html,body,div,p,ul,li,h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+	padding: 0px;
+}
+ul{list-style: none;}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+
+#testTitle{
+	width: 300px;
+	height: 30px;
+	border: 1px solid #ccc;/*no*/
+	font-size: 14px; 
+}
+/* 字体引入 */
+@font-face {
+  font-family: pixel;
+  src: url(./../font/ScreenMatrix.eot);
+}
+/*顶部导航栏*/
+.header{
+	height: 44px;
+	width: 100%;
+	background: url('./../imagesnew/daohang-bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.appLogo{
+	display: inline-block;
+	height: 20px;
+	text-align: center;
+	padding: 12px 5px;
+	
+}
+.appLogo>img{
+	width: 166px;
+	height: 20px;
+	border: none;
+}
+.appLogo>span{
+	vertical-align: top;
+	font-size: 15px;
+	line-height: 20px;
+	color : #a0a4ac;
+}
+/*首页样式*/
+#homeWrap{
+	width: 100%;
+	height: 100%;
+}
+.contentBox{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contentBox>div{
+	width: 100%;
+	margin: 6px 0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-shrink: 0;
+}
+.navTitle{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	margin: 4px;
+	color: #a0a4ac;
+}
+.infoBox{
+	flex: 2;
+	background: url('./../imagesnew/newbg/info/info_bg.png') no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.activityBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/activity/ac_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.doorBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/door/door_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.attendanceBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/attendance/at_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.streamBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/stat/stat_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.baseBox{
+	flex: 2;
+	background: url('./../imagesnew/newbg/base/base_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.collectedBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/keep_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.manageBox{
+	flex: 1;
+	background: url('./../imagesnew/newbg/mng/mng_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.innerBox{
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+.infoBox>div{
+	display: flex;
+	flex: 1;	
+	margin: 0px 20px;
+	justify-content: space-around;
+}
+.faceIcon{
+	display: flex;
+	align-items: center;
+}
+.infoGas{
+	display: flex;
+	flex-direction: column;
+	color: #ccc;
+	text-align: center;
+	font-size: 22px;
+	line-height: 42px;
+	justify-content: center;
+}
+.timeBox{
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	background: url('./../imagesnew/newbg/info/info_date.png') no-repeat;
+	padding: 0px 10px;
+	background-size: 100% 100%;
+}
+.loginMsg{
+	display: flex;
+	flex-direction: column;
+}
+.loginMsg>div:last-child{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	color: #ccc;
+}
+.loginMsg p{
+	text-align: left;
+	margin-top: 14px;
+	text-indent: 10px;
+	font-size: 14px;
+}
+.clock{
+	margin-top: -20px;
+	flex: 1;
+	align-self: center;
+	background: url('./../imagesnew/newbg/info/info_time.png') no-repeat;
+	background-size: 100% 100%;
+	font-size: 80px;
+	letter-spacing: 10px;
+	font-family: pixel;
+	color: #00dcff;
+}
