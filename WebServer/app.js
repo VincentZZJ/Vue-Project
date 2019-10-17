@@ -44,17 +44,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-
-
-
-me.down('tbtext[name=timeEast2]').addCls();
-me.down('tbtext[name=timeEast2]').setWidth();
-me.down('panel[name=atLeftPoint]').setWidth();
-me.down('panel[name=atLeftPoint]').setHeight();
-me.down('tbtext[name=timeEast1]').addCls();
-me.down('tbtext[name=hasSign]').addCls();
-me.down('tbtext[name=hasSignText]').addCls();
-me.down('tbtext[name=unSign]').addCls();
-me.down('tbtext[name=unSignText]').addCls();
-$('#templateTips').attr('fontSize','30');
